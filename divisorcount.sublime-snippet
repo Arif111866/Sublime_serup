@@ -1,0 +1,22 @@
+<snippet>
+  <content><![CDATA[
+vector<int> divcount(int x  , int m)
+{
+	vector<int> v ;
+	for (int i = 1 ; i * i <= x ; i++)
+	{
+		if (x % i == 0)
+		{
+			v.PB(i) ;
+			if (i != (x / i))
+				v.PB(x / i) ;
+		}
+	}
+	return v ;
+}
+]]></content>
+  <tabTrigger>DivisorCount</tabTrigger>
+  <description></description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

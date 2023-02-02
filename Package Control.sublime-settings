@@ -1,0 +1,19 @@
+{
+	"bootstrapped": true,
+	"installed_packages":
+	[
+		"10% Too Dull for My Tastes Color Scheme",
+		"1337 Color Scheme",
+		"Base16 Eighties Dark Color Scheme",
+		"CompetitiveProgrammingParser",
+		"CoolBase64",
+		"CppFastOlympicCoding",
+		"Highlight Build Errors",
+		"Package Control",
+		"SublimeAStyleFormatter",
+		"SublimeLinter Inline Errors",
+	],
+	"in_process_packages":
+	[
+	],
+}

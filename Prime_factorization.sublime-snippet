@@ -1,0 +1,24 @@
+<snippet>
+  <content><![CDATA[
+//prime_factorization----------------------------------------------------------
+vector<int> prime_factorization(int n)
+{
+    vector<int> factors;
+    for (int i = 2; i <= n / i; i++) {
+        while (n % i == 0) {
+            factors.push_back(i);
+            n /= i;
+        }
+    }
+    if (n > 1) {
+        factors.push_back(n);
+    }
+    return factors;
+} 
+//------------------------------------------------------------------------
+]]></content>
+  <tabTrigger>Prime_Factorization</tabTrigger>
+  <description></description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

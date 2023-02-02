@@ -1,0 +1,20 @@
+<snippet>
+  <content><![CDATA[
+//------------Subset-----------------------------------------------------
+int count = 1 << Size ;
+    vector<string> v ;
+    for (int i = 0 ; i < count ; i++ )
+    {
+        string tem = "" ;
+        for (int j = 0 ; j < s.size() ; j++)
+            if (i & (1 << j))
+                tem += s[j] ;
+            v.PB(tem) ;
+    }
+//----------------------------------------------------------------------
+]]></content>
+  <tabTrigger>Subsetgenarate</tabTrigger>
+  <description></description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

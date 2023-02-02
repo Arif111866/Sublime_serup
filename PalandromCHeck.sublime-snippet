@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+//---------chechk palindrome---------------------------------------------------
+bool is_palindrome(int i , string &s)
+{
+    if(i >= s.size()/2) return true ;
+    if(s[i] != s[s.size()-i-1]) return false ;
+    return is_palindrome(i+1 , s) ;
+}
+//---------chechk palindrome---------------------------------------------------
+]]></content>
+  <tabTrigger>PalindromeCheck</tabTrigger>
+  <description></description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

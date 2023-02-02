@@ -1,0 +1,20 @@
+<snippet>
+  <content><![CDATA[
+int arr[mx+1] = {0} ;
+void sive()
+{
+    for(int i = 2 ; i*i<=mx ; i++)
+    {
+          if(arr[i]==0)
+          {
+         for(int j = i*i  ; j <=n ; j += i  )
+            arr[j] = 1 ; 
+          }
+    }    
+}
+]]></content>
+  <tabTrigger>Sive</tabTrigger>
+  <description></description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

@@ -1,0 +1,32 @@
+<snippet>
+  <content><![CDATA[
+const int mx =100000+5 ;
+vector<int> g[mx] ;
+int vis[mx] = {0} ;
+int dis[mx] = {0} ;
+queue<int> q ;
+void bfs(int node)
+{  
+    vis[node] = 1 ;
+    dis[node] = 0 ; 
+    q.push(node) ;
+    while(!q.empty())
+    {
+        int tem = q.front() ; q.pop() ;
+        for(auto it : g[tem])
+        { 
+            if(!vis[it])
+            {
+                vis[it] = 1 ;
+                q.push(it) ;
+                dis[it] = dis[tem]+1 ;
+            }
+        }
+    }
+}
+]]></content>
+  <tabTrigger>BFS</tabTrigger>
+  <description></description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

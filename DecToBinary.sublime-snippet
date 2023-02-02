@@ -1,0 +1,25 @@
+<snippet>
+  <content><![CDATA[
+//----------Decimal to binary string convertion---------------------------------------
+string decToBinary(int n)
+{
+    char s[62] ;
+
+    // counter for binary array
+    int i = 0;
+    for(i= 0; n>0 ; n=n/2 , i++)
+    { 
+      if(n % 2== 0) s[i] = '0' ;
+      else s[i] = '1' ;
+    }
+    s[i] = '\0' ;
+    reverse(s, s+i ) ;
+    return s ;
+   } 
+//----------Decimal to binary string convertion---------------------------------------
+]]></content>
+  <tabTrigger>DecToBinary</tabTrigger>
+  <description></description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>
