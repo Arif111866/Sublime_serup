@@ -1,9 +1,10 @@
 {
-	"theme": "Default Dark.sublime-theme",
-	"color_scheme": "Monokai.sublime-color-scheme",
-	"font_size": 13,
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+	"font_size": 12,
 	"ignored_packages":
 	[
-		"Vintage",
+		"Vintage"
 	],
+	"index_files": true,
+	"theme": "Adaptive.sublime-theme"
 }

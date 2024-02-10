@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+
+const int mx = 1000 ;
+int dist[mx][mx] ;
+void Warshall()
+{
+     for (int k = 0; k < mx; k++) {
+        for (int i = 0; i < mx; i++) {
+            for (int j = 0; j < mx; j++) {
+                if (dist[i][j] > (dist[i][k] + dist[k][j]) && (dist[k][j] != INF && dist[i][k] != INF))
+                    dist[i][j] = dist[i][k] + dist[k][j];
+            }
+        }
+    }
+}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>Warshall</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

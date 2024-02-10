@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+// tree point oriantation --------------------
+struct Point {
+    int x, y;
+};
+int orientation(Point p1, Point p2, Point p3)
+{
+    int val = (p2.y - p1.y) * (p3.x - p2.x)
+              - (p2.x - p1.x) * (p3.y - p2.y);
+ 
+    if (val == 0)
+        return 0;
+ 
+    return (val > 0) ? 1 : 2; 
+}
+// 0 = coliniar , 1 = clockwise , 2 = anticlock -----
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>Oriantaion_of_ThreePoint</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+int convertToUniqueNumber(int a, int b, int c) {
+    if (a >= 10 || b >= 100 || c >= 1000) {
+        cout << "Numbers are not in the range" << "\n" ;
+    }
+    int uniqueNumber = a * 10000 + b * 100 + c;
+
+    return uniqueNumber;
+}
+
+// Function to convert a unique number back to the original three numbers
+void convertToOriginalNumbers(int uniqueNumber, int &a, int &b, int &c) {
+    // Extract the original values by reversing the concatenation process
+    c = uniqueNumber % 100;
+    b = ((uniqueNumber - c) / 100) % 100;
+    a = (uniqueNumber - b * 100 - c) / 10000;
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>Convert_To_unique_Number</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

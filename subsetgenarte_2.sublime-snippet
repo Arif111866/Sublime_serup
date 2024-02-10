@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+std::vector<int> v;
+std::vector<std::vector<int>> subset;
+void rec(int arr[] , int i , int n){
+    if(i == n){
+        subset.PB(v) ; return ;
+    }
+    v.PB(arr[i]) ;
+    rec(arr , i+1 , n) ;
+    v.pop_back() ;
+    rec(arr , i+1 , n) ;
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>Subset_by_recurssion</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
